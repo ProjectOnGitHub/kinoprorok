@@ -4,7 +4,7 @@
     grid-template-areas: 'logo search-form menu';
     @include gridable(100%);
     grid-template-columns: max-content 1fr max-content;
-    gap: 70px;
+    gap: 15px 50px;
     box-sizing: border-box;
     max-width: $max-width;
     justify-items: center;
@@ -13,6 +13,13 @@
     height: 100%;
     align-items: center;
     padding: 10px 20px;
+    @media screen and (max-width: $desktop) {
+      grid-template-columns: max-content max-content;
+
+      grid-template-areas:
+        'logo menu'
+        'search-form search-form';
+    }
   }
   &__menu {
     grid-area: menu;
@@ -21,6 +28,31 @@
     font-size: 14px;
     gap: 15px;
     flex-flow: row nowrap;
+    @media screen and (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      z-index: 1;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 320px;
+      height: 100vh;
+      font-size: 18px;
+      background-color: $color-bg;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      &_opened {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+      }
+    }
     &-link {
       @include defaultLink();
       color: $color-white;
@@ -35,6 +67,22 @@
       &:hover:after,
       &:focus:after {
         width: 100%;
+      }
+    }
+    &-button {
+      display: none;
+      justify-items: right;
+      @media screen and (max-width: $tablet) {
+        position: relative;
+        @include flexible(32px);
+        @include button();
+        z-index: 2;
+        height: 32px;
+        padding: 0;
+        background-color: transparent;
+        background-size: contain;
+        border: none;
+        border-radius: 0;
       }
     }
   }
