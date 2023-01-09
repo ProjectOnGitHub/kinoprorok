@@ -4,8 +4,8 @@
   box-sizing: border-box;
   width: 22px;
   height: 22px;
-  &:before,
-  &:after,
+  &::before,
+  &::after,
   & &__line {
     content: '';
     display: block;
@@ -15,7 +15,7 @@
     transition: 0.5s;
   }
   &_active {
-    &:before {
+    &::before {
       transform: translateY(10px) rotate(135deg);
     }
     &::after {

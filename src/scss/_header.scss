@@ -56,7 +56,7 @@
     &-link {
       @include defaultLink();
       color: $color-white;
-      &:after {
+      &::after {
         background-color: $color-white;
         display: block;
         content: '';
@@ -64,8 +64,8 @@
         width: 0%;
         transition: width 0.3s ease-in-out;
       }
-      &:hover:after,
-      &:focus:after {
+      &:hover::after,
+      &:focus::after {
         width: 100%;
       }
     }
