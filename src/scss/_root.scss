@@ -1,0 +1,13 @@
+.root {
+  @include gridable(100%);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  font-weight: 400;
+  line-height: 1.21;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  background-color: $color-white;
+  gap: 36px;
+}
