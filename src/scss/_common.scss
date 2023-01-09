@@ -1,0 +1,8 @@
+.header,
+.main,
+.footer {
+  @include gridable(100%);
+  justify-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+.header {
+  background-color: $color-bg;
+  &__container {
+    grid-template-areas: 'logo search-form menu';
+    @include gridable(100%);
+    grid-template-columns: max-content 1fr max-content;
+    gap: 70px;
+    box-sizing: border-box;
+    max-width: $max-width;
+    justify-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    height: 100%;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  &__menu {
+    grid-area: menu;
+    @include flexible(100%);
+    @include unmarkedList(0, 0);
+    font-size: 14px;
+    gap: 15px;
+    flex-flow: row nowrap;
+    &-link {
+      @include defaultLink();
+      color: $color-white;
+      &:after {
+        background-color: $color-white;
+        display: block;
+        content: '';
+        height: 2px;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover:after,
+      &:focus:after {
+        width: 100%;
+      }
+    }
+  }
+}

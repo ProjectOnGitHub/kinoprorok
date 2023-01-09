@@ -12,7 +12,7 @@
         <div class="header__container">
           <a href="/" class="logo">
             <span class="logo__title">Кино про рок</span>
-            <span class="logo_subtitle">блог о рок-музыке в кино</span>
+            <span class="logo__subtitle">блог о рок-музыке в кино</span>
           </a>
           <form class="search-form">
             <label class="search-form__label">
@@ -21,7 +21,11 @@
                 class="search-form__input"
                 placeholder="Поиск"
               />
-              <button class="search-form__button"></button>
+              <button class="search-form__button">
+                <svg class="search-form__icon">
+                  <use xlink:href="#search-icon"></use>
+                </svg>
+              </button>
             </label>
           </form>
           <nav class="header__navigation">
