@@ -1,0 +1,85 @@
+.slider {
+  @include gridable(100%);
+  max-width: calc($max-width - 40px);
+  max-height: 500px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  justify-self: center;
+  &:hover .slider__image {
+    transform: scale(1.05);
+  }
+
+  &__dots {
+    position: absolute;
+    @include flexible(100%);
+    justify-content: center;
+    gap: 10px;
+    @include unmarkedList(10px, 0px);
+    box-sizing: border-box;
+  }
+  &__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color-bg-slider;
+    transition: 0.5s ease;
+    z-index: 1;
+    &:hover {
+      background-color: rgba($color-bg-slider, 0.6);
+    }
+    &_selected {
+      background-color: $color-bg;
+    }
+  }
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    transform: scale(1);
+    transition: transform 1s ease;
+  }
+
+  &__button {
+    position: absolute;
+    margin: 0 10px;
+    @include flexible(64px);
+    height: 64px;
+    @include button();
+    border-radius: 50%;
+    align-self: center;
+    background-color: rgba($color-bg-slider, 0.4);
+    font-weight: 700;
+    font-size: 24px;
+    color: $color-bg;
+    z-index: 5;
+    &_left {
+      justify-self: left;
+    }
+    &_right {
+      justify-self: right;
+    }
+  }
+  &__text {
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba($color-bg, 0.4);
+    align-self: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    color: $color-white;
+  }
+  &__link {
+    position: absolute;
+    @include defaultLink();
+    height: 100%;
+    width: 100%;
+  }
+}

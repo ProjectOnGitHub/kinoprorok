@@ -1,6 +1,7 @@
 .root {
   @include gridable(100%);
   grid-template-columns: 1fr;
+  align-content: space-between;
   justify-items: center;
   box-sizing: border-box;
   height: 100%;
@@ -9,5 +10,4 @@
   font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   background-color: $color-white;
-  gap: 36px;
 }
