@@ -1,4 +1,4 @@
-.article {
+.post {
   @include gridable(100%);
   grid-template-rows: min-content 1fr;
   gap: 10px;
