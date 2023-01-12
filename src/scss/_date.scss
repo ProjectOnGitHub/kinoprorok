@@ -1,0 +1,15 @@
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-txt-search;
+  &_type-1 {
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    color: $color-white;
+    top: 5px;
+    left: 5px;
+    background-color: rgba($color-bg, 0.4);
+    border-radius: 3px;
+  }
+}

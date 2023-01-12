@@ -1,0 +1,5 @@
+.sidebar {
+  @include gridable(100%);
+  align-content: start;
+  gap: 50px;
+}

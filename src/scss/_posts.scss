@@ -7,6 +7,7 @@
     margin: 0;
     font-size: 28px;
     font-weight: 700;
+    color: $color-bg;
   }
   &__list {
     @include gridable(100%);

@@ -1,0 +1,76 @@
+.category {
+  @include gridable(100%);
+  gap: 20px;
+  &__posts {
+    @include unmarkedList(0, 0);
+    @include gridable(100%);
+    gap: 15px;
+    &-item {
+      max-width: 300px;
+      overflow: hidden;
+      @include gridable(100%);
+      &_type-1 {
+        position: relative;
+        &:hover .category__post-image {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  &__post {
+    &-image {
+      border-radius: 3px;
+      object-fit: cover;
+      max-height: 150px;
+      object-position: top;
+      transform: scale(1);
+      transition: transform 1s ease;
+      width: 100%;
+    }
+    &-link {
+      @include defaultLink();
+      color: $color-bg;
+      &_type-1 {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+      }
+      &_title {
+        &:hover {
+          color: $color-link;
+        }
+      }
+      &_image {
+        &:hover .category__post-image {
+          transform: scale(1.05);
+        }
+      }
+    }
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      &_type-1 {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba($color-bg, 0.4);
+        color: $color-white;
+        padding: 5px;
+        bottom: 0;
+      }
+    }
+  }
+  &__link {
+    @include defaultLink();
+    color: $color-bg;
+    &:hover {
+      color: $color-link;
+    }
+  }
+  &__name {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
