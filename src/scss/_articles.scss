@@ -1,0 +1,36 @@
+.articles {
+  @include gridable(100%);
+  justify-items: center;
+  gap: 50px;
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__list {
+    @include gridable(100%);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    @include unmarkedList(0, 0);
+    flex-flow: column wrap;
+    gap: 40px;
+    &-item {
+      overflow: hidden;
+      border-radius: 3px;
+      position: relative;
+      background-color: $color-white;
+    }
+  }
+  &__more-button {
+    @include button();
+    align-self: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid $color-border-button;
+    background-color: $color-white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transform: scale(1);
+  }
+}

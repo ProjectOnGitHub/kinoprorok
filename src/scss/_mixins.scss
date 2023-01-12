@@ -16,9 +16,8 @@
 
 @mixin defaultLink {
   cursor: pointer;
-  white-space: nowrap;
   text-decoration: none;
-  transition: text-decoration 1s ease;
+  transition: 0.5s ease-in-out;
 }
 
 @mixin button() {
@@ -28,9 +27,10 @@
   padding: 0;
   border: none;
   cursor: pointer;
-  transition: opacity 0.5s ease;
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
   &:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
   }
   &:active {
   }

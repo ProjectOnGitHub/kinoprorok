@@ -3,6 +3,8 @@
     @include gridable(100%);
     max-width: $max-width;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 60px 20px;
+    gap: 50px;
+    grid-template-columns: minmax(280px, 800px) max-content;
   }
 }
