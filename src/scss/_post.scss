@@ -1,9 +1,10 @@
 .post {
   @include gridable(100%);
   grid-template-rows: min-content 1fr;
-  gap: 10px;
   height: 100%;
   &__container {
+    background-color: $color-white;
+    overflow: hidden;
     @include flexible(100%);
     flex-flow: column nowrap;
     gap: 20px;
@@ -11,6 +12,7 @@
     box-sizing: border-box;
     color: $color-bg;
     justify-content: space-between;
+    z-index: 1;
   }
   &__link {
     @include defaultLink();
