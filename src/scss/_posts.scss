@@ -1,7 +1,6 @@
 .posts {
   @include gridable(100%);
   gap: 30px;
-  padding-bottom: 50px;
   box-sizing: border-box;
   &__title {
     margin: 0;
