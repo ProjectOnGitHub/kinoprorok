@@ -5,8 +5,14 @@
     @include unmarkedList(0, 0);
     @include gridable(100%);
     gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    @media screen and (max-width: $tablet-small) {
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
     &-item {
-      max-width: 300px;
       overflow: hidden;
       @include gridable(100%);
       &_type-1 {
@@ -58,6 +64,8 @@
         color: $color-white;
         padding: 5px;
         bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
       }
     }
   }

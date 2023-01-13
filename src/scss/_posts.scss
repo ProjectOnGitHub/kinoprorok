@@ -14,7 +14,7 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     @include unmarkedList(0, 0);
     flex-flow: column wrap;
-    gap: 40px;
+    gap: 20px;
     &-item {
       overflow: hidden;
       border-radius: 3px;
