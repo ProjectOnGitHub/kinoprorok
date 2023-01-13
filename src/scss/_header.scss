@@ -3,16 +3,18 @@
   &__container {
     grid-template-areas: 'logo search-form menu';
     @include gridable(100%);
-    grid-template-columns: max-content 1fr max-content;
-    gap: 15px 50px;
     box-sizing: border-box;
     max-width: $max-width;
+    padding: 10px 20px;
     justify-items: center;
     justify-content: space-between;
+    grid-template-columns: max-content 1fr max-content;
+    gap: 15px 50px;
+
     min-height: 60px;
     height: 100%;
     align-items: center;
-    padding: 10px 20px;
+
     @media screen and (max-width: $desktop) {
       grid-template-columns: max-content max-content;
 

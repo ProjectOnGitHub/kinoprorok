@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-bg;
+  &__container {
+    @include flexible(100%);
+    box-sizing: border-box;
+    max-width: $max-width;
+    min-height: 60px;
+    height: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__menu {
+    @include unmarkedList(0, 0);
+    @include flexible(100%);
+    gap: 20px;
+  }
+  &__link {
+    @include defaultLink();
+    color: $color-txt-search;
+    &:hover {
+      color: $color-link;
+    }
+  }
+  &__copyright {
+    white-space: nowrap;
+    color: $color-txt-category;
+  }
+}
