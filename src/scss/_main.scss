@@ -1,10 +1,16 @@
 .main {
-  &__primary-content {
+  @include gridable(100%);
+  padding-bottom: 50px;
+  gap: 60px;
+  &__primary-content,
+  &__secondary-content {
     @include gridable(100%);
     max-width: $max-width;
     box-sizing: border-box;
-    padding: 60px 20px;
+    padding: 0 20px;
     gap: 50px;
+  }
+  &__primary-content {
     grid-template-columns: minmax(280px, 900px) max-content;
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr;

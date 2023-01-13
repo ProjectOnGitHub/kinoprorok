@@ -2,6 +2,14 @@
   @include gridable(100%);
   gap: 30px;
   box-sizing: border-box;
+  &__link {
+    @include defaultLink();
+    color: $color-bg;
+    width: max-content;
+    &:hover {
+      color: $color-link;
+    }
+  }
   &__title {
     margin: 0;
     font-size: 28px;
