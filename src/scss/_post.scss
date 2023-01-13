@@ -36,6 +36,7 @@
     margin: 0;
   }
   &__image {
+    display: block;
     object-fit: cover;
     object-position: top;
     width: 100%;
@@ -56,5 +57,10 @@
     &:hover {
       color: $color-link;
     }
+  }
+  &__figure {
+    margin: 0;
+    width: 100%;
+    height: auto;
   }
 }
