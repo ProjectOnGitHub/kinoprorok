@@ -1,5 +1,5 @@
 .main {
-  &__container {
+  &__primary-content {
     @include gridable(100%);
     max-width: $max-width;
     box-sizing: border-box;
