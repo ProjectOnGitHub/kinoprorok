@@ -2,4 +2,7 @@
   @include gridable(100%);
   align-content: start;
   gap: 50px;
+  &_single-page {
+    padding-top: 75px;
+  }
 }
