@@ -4,6 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
+const htmlPageNames = ['post'];
+const multipleHtmlPlugins = htmlPageNames.map((name) => new HtmlWebpackPlugin({
+  template: `./src/${name}.html`, // relative path to the HTML files
+  filename: `${name}.html`, // output HTML files
+  chunks: ['main'], // respective JS files
+}));
+
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
@@ -55,6 +62,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      chunks: ['main'],
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
@@ -62,5 +70,5 @@ module.exports = {
       plainSprite: true,
     }),
 
-  ],
+  ].concat(multipleHtmlPlugins),
 };
