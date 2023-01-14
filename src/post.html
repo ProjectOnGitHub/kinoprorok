@@ -56,517 +56,650 @@
         </div>
       </header>
       <main class="main">
-        <div class="slider">
-          <ul class="slider__dots">
-            <li class="slider__dot slider__dot_selected"></li>
-            <li class="slider__dot"></li>
-            <li class="slider__dot"></li>
-            <li class="slider__dot"></li>
-          </ul>
-          <img
-            src="<%=require('../src/images/slider-1.jpg')%>"
-            alt=""
-            class="slider__image"
-          />
-          <button class="slider__button slider__button_left">&larr;</button>
-          <button class="slider__button slider__button_right">&rarr;</button>
-          <p class="slider__text">
-            Фильм «Почти знаменит»: в тихом омуте черти водятся
-          </p>
-          <a href="post.html" class="slider__link"></a>
-        </div>
         <div class="main__primary-content">
-          <section class="posts">
-            <h1 class="posts__title">Последние статьи</h1>
-            <ul class="posts__list">
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-1.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
+          <article class="article">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
               </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-2.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title"
-                        >«Школа рока»</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Кино про рок</a>
               </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-3.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        «Рок-волна»: заплыв по морю рока</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить. А можно и еще разок столько же
-                      добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-4.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-3.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
+              <li class="breadcrumbs__item">Почти знаменит</li>
             </ul>
-            <button class="posts__more-button">Показать ещё</button>
-          </section>
-          <aside class="sidebar">
-            <section class="category">
-              <h3 class="category__name">
-                <a href="" class="category__link">Новости</a>
-              </h3>
-              <ul class="category__posts">
-                <li class="category__posts-item">
-                  <span class="date">21.02.2022</span>
+            <h1 class="article__title" id="top">
+              Фильм «Почти знаменит»: в тихом омуте черти водятся
+            </h1>
+            <div class="article__text">
+              <figure class="article__figure">
+                <img
+                  src="http://kinoprorok.ru/img/uploads/2012/08/bangs-miller.jpg"
+                  alt=""
+                  class="article__image"
+                />
+                <figcaption class="article__figure-text">
+                  Фильм «Почти знаменит»: в тихом омуте черти водятся
+                </figcaption>
+              </figure>
+              <p class="article__paragraph">
+                Я посмотрел «<strong>Почти знаменит</strong>» лет десять тому
+                назад. Помню было полпервого ночи и я уже собирался спать, но
+                решил еще раз пройтись по каналам. Авось найду что-нибудь
+                интересное. И нашел.
+              </p>
+              <p class="article__paragraph">
+                На экране какой-то усатый дядька втолковывал одному пареньку азы
+                рок-журналистики Я понял, что обязательно должен посмотреть это
+                кино и не прогадал.
+              </p>
+              <p class="article__paragraph">
+                Много позже я узнал, что дядька &#8212; это знаменитый
+                рок-журналист Лестер Бэнгс, а прототипом паренька стал сам
+                режиссер «Почти знаменит», Кэмерон Кроу. Об этом, а также о
+                многом другом, и пойдет речь в сегодняшней статье.
+              </p>
+              <p class="article__paragraph">
+                Чтобы было удобнее ориентироваться, я сделал оглавление, так что
+                бы вы сразу перешли на заинтересовавший вас материал. Итак,
+                сегодня я расскажу:
+              </p>
+              <ul class="article__list">
+                <li class="article__list-item">
+                  о
                   <a
-                    href="post.html"
-                    class="category__post-link category__post-link_title"
-                  >
-                    <h3 class="category__post-title">
-                      Showtime экранизирует мемуары Патти Смит
-                    </h3>
-                  </a>
+                    class="article__link"
+                    href="#syuzhet"
+                    title="Перейти к рассказу о сюжете"
+                    >сюжете</a
+                  >;
                 </li>
-                <li class="category__posts-item">
-                  <span class="date">21.02.2022</span>
+                <li class="article__list-item">
+                  о
                   <a
-                    href="post.html"
-                    class="category__post-link category__post-link_title"
-                  >
-                    <h3 class="category__post-title">
-                      Бадди Холли: биография легенды рок-н-ролла
-                    </h3>
-                  </a>
+                    class="article__link"
+                    href="#sozdanie"
+                    title="Перейти к рассказу о создании"
+                    >создании фильма, его персонажах и актерах</a
+                  >;
                 </li>
-                <li class="category__posts-item">
-                  <span class="date">21.02.2022</span>
+                <li class="article__list-item">
+                  и об
                   <a
-                    href="post.html"
-                    class="category__post-link category__post-link_title"
-                  >
-                    <h3 class="category__post-title">
-                      Бадди Холли: биография легенды рок-н-ролла
-                    </h3>
-                  </a>
-                </li>
-                <li class="category__posts-item">
-                  <span class="date">21.02.2022</span>
-                  <a
-                    href="post.html"
-                    class="category__post-link category__post-link_title"
-                  >
-                    <h3 class="category__post-title">
-                      Бадди Холли: биография легенды рок-н-ролла
-                    </h3>
-                  </a>
+                    class="article__link"
+                    href="#facty"
+                    title="Перейти к фактам"
+                    >интересных фактах</a
+                  >.
                 </li>
               </ul>
-            </section>
-            <section class="category">
-              <h3 class="category__name">
-                <a href="" class="category__link">Биография</a>
-              </h3>
-              <ul class="category__posts category__posts_type-1">
-                <li class="category__posts-item category__posts-item_type-1">
-                  <span class="date date_type-1">21.02.2022</span>
-                  <h3 class="category__post-title category__post-title_type-1">
-                    Бадди Холли: биография легенды рок-н-ролла
-                  </h3>
-
-                  <img
-                    src="<%=require('../src/images/slider-2.jpg')%>"
-                    alt=""
-                    class="category__post-image"
-                  />
-                  <a
-                    href="post.html"
-                    class="category__post-link category__post-link_type-1"
-                  ></a>
+              <p class="article__paragraph">
+                Статья о
+                <a
+                  class="article__link"
+                  href="#://kinoprorok.ru/saundtrek/pochti-znamenit/"
+                  >саундтреке</a
+                >
+                будет несколько позже, так что настоятельно рекомендую
+                <a
+                  class="article__link"
+                  href="#podpiska"
+                  title="Перейти к форме подписки"
+                  >подписаться</a
+                >
+                на обновления моего блога, чтобы ничего не пропустить.
+              </p>
+              <h2 class="article__subtitle" id="syuzhet">
+                О сюжете фильма «Почти знаменит»
+              </h2>
+              <figure class="article__figure">
+                <img
+                  src="http://kinoprorok.ru/img/uploads/2012/08/angarano-fugit-crowe.jpg"
+                  alt=""
+                  class="article__image"
+                />
+              </figure>
+              <p class="article__paragraph">
+                Не каждый может похвастаться тем, что успел за какие-то пару
+                недель американский парнишка
+                <span class="bld">Уильям Миллер</span>, а именно:
+              </p>
+              <ul class="article__list">
+                <li class="article__list-item">
+                  скатнуться в турне с набирающей популярность рок-группой;
                 </li>
-                <li class="category__posts-item category__posts-item_type-1">
-                  <span class="date date_type-1">21.02.2022</span>
-                  <h3 class="category__post-title category__post-title_type-1">
-                    Фильм «Почти знаменит»: в тихом омуте черти водятся
-                  </h3>
-
-                  <img
-                    src="<%=require('../src/images/slider-1.jpg')%>"
-                    alt=""
-                    class="category__post-image"
-                  />
-                  <a
-                    href="post.html"
-                    class="category__post-link category__post-link_type-1"
-                  ></a>
+                <li class="article__list-item">
+                  потерять девственность в 15 лет, причем сразу с тремя
+                  прекрасными особами;
                 </li>
-              </ul>
-            </section>
-            <section class="category">
-              <h3 class="category__name">
-                <a href="" class="category__link">Саундтрек</a>
-              </h3>
-              <ul class="category__posts category__posts_type-1">
-                <li class="category__posts-item category__posts-item_type-1">
-                  <span class="date date_type-1">21.02.2022</span>
-                  <h3 class="category__post-title category__post-title_type-1">
-                    Бадди Холли: биография легенды рок-н-ролла
-                  </h3>
-
-                  <img
-                    src="<%=require('../src/images/slider-3.jpg')%>"
-                    alt=""
-                    class="category__post-image"
-                  />
-                  <a
-                    href="post.html"
-                    class="category__post-link category__post-link_type-1"
-                  ></a>
+                <li class="article__list-item">
+                  влюбиться, что примечательно, не в одну из тех, с кем потерял
+                  девственность;
                 </li>
-                <li class="category__posts-item category__posts-item_type-1">
-                  <span class="date date_type-1">21.02.2022</span>
-                  <h3 class="category__post-title category__post-title_type-1">
-                    Фильм «Почти знаменит»: в тихом омуте черти водятся
-                  </h3>
-
-                  <img
-                    src="<%=require('../src/images/slider-4.jpg')%>"
-                    alt=""
-                    class="category__post-image"
-                  />
-                  <a
-                    href="post.html"
-                    class="category__post-link category__post-link_type-1"
-                  ></a>
+                <li class="article__list-item">
+                  чуть не погибнуть в авиакатастрофе;
+                </li>
+                <li class="article__list-item">
+                  и, наконец, написать обо всем этом статью для обложки журнала
+                  Rolling Stone.
                 </li>
               </ul>
-            </section>
-          </aside>
-        </div>
-        <div class="main__secondary-content">
-          <section class="posts">
-            <h2 class="posts__title">
-              <a href="" class="posts__link">Кино про рок</a>
-            </h2>
-            <ul class="posts__list">
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-1.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-2.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title"
-                        >«Школа рока»</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-3.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title"
-                        >«Рок-волна»: заплыв по морю рока</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить. А можно и еще разок столько же
-                      добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-4.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </section>
-          <section class="posts">
-            <h2 class="posts__title">
-              <a href="" class="posts__link">Рок в кино</a>
-            </h2>
-            <ul class="posts__list">
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-1.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-2.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title"
-                        >«Школа рока»</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-3.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title"
-                        >«Рок-волна»: заплыв по морю рока</a
-                      >
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить. А можно и еще разок столько же
-                      добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-              <li class="posts__list-item">
-                <article class="post">
-                  <a href="post.html" class="post__link post__link_image">
-                    <img
-                      src="<%=require('../src/images/slider-4.jpg')%>"
-                      alt=""
-                      class="post__image"
-                    />
-                  </a>
-                  <div class="post__container">
-                    <h2 class="post__title">
-                      <a href="post.html" class="post__link post__link_title">
-                        Фильм «Почти знаменит»: в тихом омуте черти водятся
-                      </a>
-                    </h2>
-                    <p class="post__paragraph">
-                      Краткое описание символом на 80 максимум. Можно еще
-                      столько же добавить.
-                    </p>
-                    <div class="post__info">
-                      <span class="date">21.02.2022</span>
-                      <a href="" class="post__category">Кино про рок</a>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </section>
+              <blockquote class="blockquote">
+                Не, первые три вещи, конечно, можно сделать не особо-то и
+                напрягаясь. Но вот статья для Rolling Stone в 15 лет — это
+                однозначно зачет )
+              </blockquote>
+              <p class="article__paragraph">
+                Это если вкратце. Ну а подробности сразу после трейлера (на
+                английском).
+              </p>
+              <p class="article__paragraph">
+                Мама Уильяма, профессор одного из колледжей Сан Диего, всю жизнь
+                опекает сына и старается, чтобы он вырос «правильным» человеком.
+                В школу он идет в пять лет, а в свободное от учебы время вместе
+                с матерью рассуждает о литературе. Жизнь его расписана на много
+                лет вперед: колледж после школы, затем университет и карьера
+                юриста.
+              </p>
+              <p class="article__paragraph">
+                Скорее всего, так бы оно и вышло, если бы не Анита, сестра
+                парня. Та уже давно в контрах с матерью из-за своего слишком
+                бунтарского образа жизни. И ей не нравится, что мама полностью
+                контролирует брата.
+              </p>
+              <p class="article__paragraph">
+                Вскоре Аните исполняется 18 лет и она решает
+                <del>хватит этот терпеть!</del> уехать подальше от матери и
+                стать стюардессой. Ну а напоследок оставляет брату подарок (а
+                маме &#8212; «бомбу замедленного действия») в виде коллекции
+                пластинок The Who, The Rolling Stones, Хендрикса, Дилана, Led
+                Zeppelin и многих других.
+              </p>
+              <figure class="article__figure">
+                <img
+                  src="http://kinoprorok.ru/img/uploads/2012/08/william-i-zapisi.jpg"
+                  alt=""
+                  class="article__image"
+                />
+                <figcaption class="article__figure-text">
+                  Эти пластинки из своей коллекции предоставил сам режиссер.
+                  Полный список будет в следующем посте.
+                </figcaption>
+              </figure>
+              <p class="article__paragraph">
+                Проходит четыре года. Об адвокатской карьере Уильям уже и не
+                думает (мама, конечно, не в курсе). Он пишет статьи для школьной
+                газеты и хочет стать рок-журналистом, как и его кумир &#8212;
+                Лестер Бэнгс. Парень даже отправляет ему статьи, мол, дядь,
+                зацени, как у меня получается.
+              </p>
+              <blockquote class="blockquote">
+                Считается, что именно Бэнгс придумал такие термины, как
+                хэви-метал и панк-рок.
+              </blockquote>
+              <p class="article__paragraph">
+                В один, судьбоносный для Уильяма, день они встречаются. Бэнгс
+                признается, да, пацан, в твоих статьях есть что-то такое эдакое,
+                так что давай напиши-ка мне тысячу слов о Black Sabbath,
+                посмотрим, как ты справишься, а я тебе дам 35 баксов.
+              </p>
+              <p class="article__paragraph">
+                Именно на концерте Black Sabbath, куда Уильям отправляется по
+                заданию Бэнгса, он встречает фанатку Пенни Лейн с подругами и
+                музыкантов группы Stillwater &#8212; людей, которые изменят его
+                жизнь (впрочем, как и он их).
+              </p>
+              <p class="article__paragraph">
+                Через несколько дней после концерта нашему герою звонит
+                <span class="bld">Бен Фонг-Торрес</span>, главный редактор
+                Rolling Stone, и предлагает поработать на журнал. Он-де видел
+                публикации и они его весьма заинтересовали. Естественно, дядька
+                и не догадывается, что будущему работнику всего 15 лет.
+              </p>
+              <figure class="article__figure">
+                <img
+                  src="http://kinoprorok.ru/img/uploads/2012/09/miller-fong-torres.jpg"
+                  alt=""
+                  class="article__image"
+                />
+              </figure>
+
+              <blockquote class="blockquote">
+                Как и Бэнгс, Фонг-Торрес &#8212; реальный человек. Он проработал
+                в журнале Rolling Stone с 1968-го по 1981-й год. Вот даже
+                удалось найти его
+              </blockquote>
+              <figure class="article__figure">
+                <img
+                  src="http://kinoprorok.ru/img/uploads/2012/09/ben-fong-torres.jpg"
+                  alt=""
+                  class="article__image"
+                />
+              </figure>
+              <p class="article__paragraph">
+                Для начала Фонг-Торрес просит написать статью о какой-нибудь
+                группе. Уильям, находясь под впечатлением от встречи со
+                Stillwater, тут же называет их. Редактору его выбор приходится
+                по душе и он предлагает за будущую статью <del>700</del> 1000
+                баксов (неплохо, да?). Помимо этого наш герой, за счет заведения
+                (читай Rolling Stone), должен смотаться в гастрольный тур с
+                группой. И с этого момента начинается самое увлекательное
+                путешествие в жизни Уильяма&#8230;
+              </p>
+              <h2 class="article__subtitle" id="sozdanie">
+                «Почти знаменит»: персонажи, актеры, создатели
+              </h2>
+              <p class="article__paragraph">
+                Выше я уже говорил, что картина основана на биографии режиссера
+                &#8212; <span class="bld">Кэмерона Кроу</span>. Он, как и
+                Уильям, начал карьеру журналиста в 15 лет. Сначала были San
+                Diego Door, Creem (тут уже рулил Лестер Бэнгс). Первая его
+                статья в журнале Rolling Stone вышла в 133-м номере от 26 апреля
+                1973 года. Называлась она &#8220;Poor Poco: They Were ‘The Next
+                Big Thing’ Four Years Ago&#8221; и рассказывала про американскую
+                кантри-рок-группу Poco. В отличие от первой статьи Уильяма
+                Миллера, эта статья на обложку Rolling Stone не попала.
+              </p>
+              <p class="article__paragraph">
+                Первой группой, с которой Кэмерон отправился в турне, была
+                <span class="bld">The Allman Brothers Band</span>, а статья,
+                написанная им после путешествия, попала на обложку Роллинг Стоун
+                (№149 от 06.12.1973). Потом были путешествия с Poco, Led
+                Zeppelin, Lynyrd Skynyrd, Eagles и The Who. Воспоминания об этих
+                событиях и легли в основу «Почти знаменит». Кстати, именно с
+                последними Кроу чуть не разбился на самолете.
+              </p>
+              <blockquote class="blockquote">
+                Всё-таки, львиная доля сюжетной составляющей киноленты взята из
+                турне с The Allman Brothers Band. Почитайте ту самую первую
+                статью с обложки на
+                <a
+                  href="http://www.theuncool.com/journalism/rs149-the-allman-bros/"
+                  target="_blank"
+                  >сайте режиссера</a
+                >. И обратите внимание на предисловие. Тот, кто смотрел «Почти
+                знаменит», сразу увидит знакомые моменты.<br />Кстати, доменное
+                имя, которое он взял для своего сайта &#8212; &#8220;the
+                uncool&#8221; &#8212; это дань уважения Лестеру Бэнгсу. Тот
+                когда-то сказал Кроу: &#8220;The only true currency in this
+                bankrupt world is what you share with someone else when
+                you&#8217;re uncool&#8221; &#8212; «Единственная твёрдая валюта
+                в этом обанкротившемся мире &#8212; признаться другому человеку,
+                что ты не крут». И именно эти слова говорит в «Почти знаменит»
+                &#8220;экранный&#8221; Бэнгс юному Уильяму.
+              </blockquote>
+              <p class="article__paragraph">
+                Хоть картина и основывалась на биографии режиссера, тот ни в
+                коем случае не пытался поставить своего героя в центр истории,
+                как это бывает во многих биографических лентах. Уильяму была
+                отведена роль наблюдателя. Как Кроу рассказывал в одном из
+                интервью, он старался показать тех людей, которых он никогда не
+                забудет, передать зрителю те чувства, которые испытывал, когда
+                знакомился с музыкантами, брал у них интервью, шел на их
+                концерты.
+              </p>
+              <h3 class="article__small-title" id="miller">Уильям Миллер</h3>
+              <p class="article__paragraph">
+                На его роль искали актера, который не только бы воплотил в жизнь
+                то, что от него требовалось, но и который бы вынес на своих юных
+                плечах большую часть картины.
+              </p>
+              <p class="article__paragraph">
+                Среди сотен кассет, присланных желающими получить роль, была и
+                запись Патрика Фьюджита. Как только Кроу увидел ее, то понял что
+                Фьюджит идеально подходит на роль Уильяма.
+              </p>
+              <p class="article__paragraph">
+                Позже Патрик рассказывал, что во время съемок ужасно волновался
+                ибо для него все было в новинку: это был его первый фильм, его
+                первая постельная сцена, его первый поцелуй на экране. Но это
+                помогло ему вжиться в роль, потому что и его героем правили
+                сходные чувства.
+              </p>
+              <p class="article__paragraph">
+                Работая над персонажем Фьюджит прочитал многие статьи Кроу, но,
+                в тоже время, он хотел сделать своего персонажа не точной копией
+                режиссера, а самостоятельной личностью.
+              </p>
+              <p class="article__paragraph">
+                Единственным минусом у Фьюджита было то, что рок-музыкой он
+                вообще не увлекался. Ну, может, слышал пару песен по радио.
+                Поэтому Кроу вручил ему альбомы Led Zeppelin, Дэвида Боуи, The
+                Who, Нила Янга, Питера Фрэмптона и наказал
+                <del>выучить от сих до сих, приеду &#8212; проверю</del>
+                проникнуться этой музыкой. И Патрик настолько проникся, что рок
+                стал неотъемлемой частью его жизни.
+              </p>
+              <blockquote class="blockquote">
+                Фьюджит также снялся в еще одном проекте Кроу &#8212; «Мы купили
+                зоопарк».
+              </blockquote>
+              <h3 class="article__small-title" id="bangs">Лестер Бэнгс</h3>
+              <p class="article__paragraph">
+                «Лестера уже нет с нами, но я никогда не забуду его. Он был
+                больше, чем жизнь&#8230; Я часто слышал его голос, когда работал
+                над фильмом», говорил Кэмерон Кроу.
+              </p>
+              <p class="article__paragraph">
+                Роль Лестера Бэнгса получил актер Филип Сеймур Хоффман
+                («Рок-волна»). Он понимал, что этот человек много значил для
+                режиссера, что будет очень трудно достоверно изобразить его.
+                Кто-то другой разницы бы не заметил, но только не Кроу. Хоффман
+                подолгу беседовал с режиссером, чтобы лучше узнать Бэнгса, читал
+                его статьи, слушал записи с ним. И актеру удалось угодить Кроу.
+                По словам режиссера, Хоффман, никогда не встречавшийся с
+                Бэнгсом, изобразил его именно таким, каким он был в жизни.
+              </p>
+              <blockquote class="blockquote">
+                На роль Бэнгса претендовали Джек Блэк («Школа рока») и Джон
+                Фавро («Железный человек»).
+              </blockquote>
+              <p class="article__paragraph">
+                Интересно, что Хоффман пробыл на съемочной площадке всего четыре
+                дня, так как остальное время провалялся с гриппом.
+              </p>
+              <p style="font-weight: bold">Добавлено 17.02.2014</p>
+              <p class="article__paragraph">
+                Второго февраля Филип Сеймур Хоффман умер от героиновой
+                передозировки. Недавно Rolling Stone опубликовали на сайте
+                интервью
+                <a
+                  class="article__link"
+                  href="#://rollingstone.ru/cinema/interview/18981.html"
+                  >Кэмерона Кроу о том, как Филип Сеймур Хоффман стал Лестером
+                  Бэнгсом</a
+                >.
+              </p>
+              <h3 class="article__small-title" id="lane">Пенни Лейн</h3>
+              <p class="article__paragraph">
+                Божий дар рок-н-ролла, бывшая групи и первая любовь Уильяма
+                Миллера. Она не спит с рок-звездами, потому что они знамениты.
+                <del>Минет, и ничего более.</del> Она с ними только ради музыки.
+              </p>
+              <p class="article__paragraph">
+                Роль Пенни Лейн сначала хотели отдать актрисе Саре Полли
+                («Господин Никто»), но та слиняла в канадскую малобюджетку
+                «Подзаборный закон». Затем была Кирстен Данст (трилогия
+                «Человек-паук»), но режиссер вовремя передумал и взял Кейт
+                Хадсон. По его словам, она обладает удивительным сочетанием
+                сексуальности, очарования, уверенности и уязвимости, позволившие
+                сыграть роль без особых затруднений. Она настолько здорово
+                смотрелась в кадре, что Кроу хотел только снимать и снимать.
+              </p>
+              <p class="article__paragraph">
+                Любимая сцена режиссера &#8212; когда Пенни Лейн танцует в
+                пустом зале после концерта в Кливленде.
+              </p>
+              <blockquote class="blockquote">
+                Изначально Кейт Хадсон прочили роль сестры Уильяма. В
+                окончательном варианте «Почти знаменит» ее сыграла Зоуи
+                Дешанель.
+              </blockquote>
+              <p class="article__paragraph">
+                Как говорится в конце титров, персонаж Пенни Лейн был основан на
+                реальном человеке, давнишней знакомой Кэмерона Кроу &#8212;
+                Пенни Трамбл. Её историю можно почитать (на английском)
+                <a
+                  href="http://pennielane.com/2012/09/16/the-real-story/"
+                  target="_blank"
+                  >тут</a
+                >.
+              </p>
+              <h3 class="article__small-title" id="stillwater">Stillwater</h3>
+              <p class="article__paragraph">
+                Они называют Уильяма врагом ибо они играют не для всяких там
+                писак, пишущих разные гадости про музыкантов, а для фанатов. Но,
+                в тоже время, они хотят, чтобы парень считал их своим друзьями
+                &#8212; на обложку Rolling Stone всем хочется.
+              </p>
+              <blockquote class="blockquote">
+                Коллектив Stillwater действительно существовал, но у него, кроме
+                названия, ничего общего c группой, о которой дальше пойдет речь,
+                нет. Музыканты реальной Стиллуотер разрешили использовать
+                название, после того, как прочли сценарий «Почти знаменит».
+              </blockquote>
+              <p class="article__paragraph">Stillwater это:</p>
+              <ul class="article__list">
+                <li class="article__list-item">гитарист Рассел Хэммонд;</li>
+                <li class="article__list-item">вокалист Джефф Биби;</li>
+                <li class="article__list-item">барабанщик Эд Валленкурт;</li>
+                <li class="article__list-item">басист Ларри Феллоуз.</li>
+              </ul>
+              <p class="article__paragraph">
+                Ну и можно сюда добавить их менеджера &#8212; Дика Розуэлла. Тот
+                у них и за маму, и за папу, и за старшего брата одновременно.
+              </p>
+              <blockquote class="blockquote">
+                Название группы можно перевести как «тихий омут». В английском
+                языке даже существует выражение &#8220;still waters run
+                deep&#8221;, аналогичное нашему «в тихом омуте черти водятся».
+              </blockquote>
+              <p class="article__paragraph">
+                Роль Рассела Хэммонда предназначалась самому Брэду Питту. Но
+                тот, проработав несколько месяцев, заявил, мол, ничего у него не
+                получится, так как он не разбирается во всей этой фигне. И
+                благополучно свалил.
+              </p>
+              <p class="article__paragraph">
+                Ему на замену нашли Билли Крадапа («Хранители»). Своего
+                персонажа он срисовал с Гленна Фрея из Eagles.
+              </p>
+              <blockquote class="blockquote">
+                В одной из сцен обдолбанный и пьянющий Хэммонд стоит на крыше
+                дома и кричит: «Я золотой бог!». Говорят, тоже самое орал и
+                Роберт Плант (трезвый) из Led Zeppelin, когда стоял на балконе
+                отеля и смотрел на Санстет Стрип.
+              </blockquote>
+              <p class="article__paragraph">
+                Так как Крадап на гитаре знал всего пару-тройку аккордов, а так
+                по сюжету он должен был играть просто охрененно, ему на подмогу
+                прислали <span class="bld">Питера Фрэмптона</span>, который и
+                поднатаскал актера.
+              </p>
+              <blockquote class="blockquote">
+                Фрэмптон &#8212; экс-участник группы The Herd и сооснователь
+                Humble Pie. Подробнее о его роли в создании «Почти знаменит» вы
+                узнаете из следующей статьи. В этом же посте я еще разок вернусь
+                к нему.
+              </blockquote>
+              <p class="article__paragraph">
+                Джейсон Ли («Догма»), исполнитель роли вокалиста Джеффа Биби,
+                сказал, что прототипом его персонажа стал Пол Роджерс,
+                основатель групп Free и Bad Company.
+              </p>
+              <p class="article__paragraph">
+                Ну а двух оставшихся участников, барабанщика Эда Валленкурта и
+                бас-гитариста Ларри Феллоуза, сыграли самые что ни на есть
+                настоящие музыканты &#8212; Джон Федевич и Марк Козелек. У
+                последнего есть собственные проекты &#8212; Sun Kil Moon и Red
+                House Painters.
+              </p>
+              <blockquote class="blockquote">
+                Валленкурт за всё время произносит только одну фразу. Но зато
+                какую! Не буду портить впечатление, смотрите сами.
+              </blockquote>
+              <p class="article__paragraph">
+                Менеджера Stillwater, Дика Розуэлла, сыграл еще один не шибко
+                известный (по крайнем мере мне) австралийский рок-музыкант и
+                актер <span class="bld">Ноа Тейлор</span>.
+              </p>
+              <blockquote class="blockquote">
+                Ли, Федевич, Козелек и Тейлор еще раз встретились вместе на
+                съемочной площадке другого проекта Кэмерона Кроу &#8212;
+                «Ванильного неба».
+              </blockquote>
+              <p class="article__paragraph">
+                Про Стиллуотер еще многое чего можно рассказать, но я решил, что
+                сделаю это в следующем посте. Ну а пока вас ждут&#8230;
+              </p>
+              <h2 class="article__subtitle" id="facty">
+                Интересные факты о фильме «Почти знаменит»
+              </h2>
+              <p class="article__paragraph">
+                Начну, пожалуй, с названия. «Almost Famous» &#8212; это совсем
+                не то, что хотел режиссер. За него все придумали продюсеры
+                DreamWorks. Видите ли им не понравилось, как тот назвал своё
+                детище. А назвал он его весьма оригинально «Untitled», то есть
+                «Без названия». Вот продюсеры и поменяли на более
+                привлекательное по их мнению.
+              </p>
+              <p class="article__paragraph">
+                В режиссерской версии ленте вернули оригинальное название. Она
+                получилась почти на 40 минут длиннее театральной.
+              </p>
+              <blockquote class="blockquote">
+                Сценарий насчитывал 172 страницы, а само кино сняли за 92 дня.
+                Сам сценарий можно скачать
+                <a
+                  href="http://kinoprorok.ru/img/uploads/2012/09/almost-famous-movie-script.pdf"
+                  title="Скачать сценарий фильма «Почти знаменит» на английском языке "
+                  >отсюда</a
+                >.
+              </blockquote>
+              <p class="article__paragraph">
+                Среди сцен, включенных в расширенное издание, оказалось забавное
+                интервью, которые участники Stillwater «дали» одному
+                радиоведущему. В кавычках, потому что укуреный диджей в прямом
+                смысле проспал все самое интересное. Этого любителя травки
+                сыграл актер и музыкант <span class="bld">Кайл Гэсс</span> из
+                замечательной сатирической рок-группы
+                <span class="bld">Tenacious D</span>.
+              </p>
+              <p class="article__paragraph">
+                Также включили интервью бас-гитариста Ларри Феллоуза. Оно
+                достойно десятки лучших анекдотов про басистов.
+              </p>
+              <blockquote class="blockquote">
+                Уильям (У) берет интервью у Ларри (Л):<br />
+                (У): Ларри Феллоуз, какова ваша роль в Стиллуотер? Какой
+                ингредиент вы добавляете в химическую смесь вашей группы?<br />
+                (Л): Я играю на басу.<br />
+                (У): Верно! А если этот ингредиент убрать, что группа потеряет в
+                стилистическом плане? Чего будет не хватать?<br />
+                (Л): Басов.
+              </blockquote>
+              <p class="article__paragraph">
+                Естественно, добавленных сцен гораздо больше. Но если их все
+                описывать, статья растянется еще на пару-тройку тысяч знаков (и
+                то, если вкратце). Поэтому продолжу говорить о других интересных
+                фактах.
+              </p>
+              <p class="article__paragraph">
+                Рука, пишущая в блокноте название и имена актеров в самом начале
+                &#8212; это рука режиссера. Помимо неё Кроу снял в картине почти
+                всю семью. Например, мама &#8212; Элис Мари &#8212; стояла на
+                сцене рядом с трибуной и раздавала дипломы об окончании школы. А
+                родная сестра Синди, ставшая прототипом Аниты, вместе с мужем и
+                детьми шарахнулись от Дэвида Боуи, которого втолкнул в лифт
+                менеджер музыканта.
+              </p>
+              <p class="article__paragraph">
+                Нашлось в картине место и одному из основателей и бессменному
+                владельцу журнала Роллинг Стоун &#8212;
+                <span class="bld">Яну Веннеру</span>. Именно он читает газету в
+                такси, куда заглядывает Миллер, ищущий сбежавшую Пенни Лейн
+                (сцена после ресторана в Нью-Йорке).
+              </p>
+              <p class="article__paragraph">
+                Еще одной знаменитостью, промелькнувшей в «Почти знаменит», был
+                уже упомянутый выше Питер Фрэмптон. Только он сыграл не самого
+                себя, а Рэджа, гастрольного менеджера своей же группы Humble
+                Pie.
+              </p>
+              <p class="article__paragraph">
+                Как и положено правильному
+                <a
+                  class="article__link"
+                  href="#://kinoprorok.ru"
+                  title="Главная страница блога"
+                  >рок-фильму</a
+                >, в кинокартине есть много намеков и отсылок к различным
+                группам. Про плакаты именитых коллективов в комнате Уильяма я
+                вообще молчу. Это слишком уж очевидно. Я говорю о незаметных
+                рядовому зрителю упоминаний.
+              </p>
+              <p class="article__paragraph">
+                Естественно, режиссер не забыл про Allman Brothers Band.
+                Например, в самом начале фильма, среди вещей разложеных на столе
+                вещей, мелькает билет на концерт группы, состоявшийся 5-го
+                августа 1972-го года на Спортивной арене Сан-Диего. А на стене в
+                комнате Уильяма висит плакат со Stillwater очень уж напоминающий
+                обложку с двойного концертного альбома Allman Brothers Band
+                &#8212; «At Fillmore East» (там же в комнате висит небольшая
+                афиша). Кстати, альбом занимает 49-е место в списке «500
+                величайших альбомов всех времен» по версии сами догадайтесь
+                какого журнала.
+              </p>
+              <blockquote class="blockquote">
+                Также в кино нам показывают техника Allman Brothers &#8212;
+                Джозефа Л. Кэмпбелла, известного больше как легендарный Рэд Дог.
+                Его сыграл Зак Уорд.
+              </blockquote>
+              <p class="article__paragraph">
+                Отсылку к концертнику другого музыканта мы видим перед первым
+                выступлением Стиллуотер. Музыкант этот &#8212;
+                <span class="bld">Нил Янг</span>, а альбом называется «Time
+                Fades Away».
+              </p>
+              <blockquote class="blockquote">
+                В одной из следующих сцен музыканты втянут Уильяма в круг и
+                начнут петь. Этот эпизод произошел с режиссером в 92-ом году на
+                фестивале Lollapalooza. Тогда в круг его позвал Эдди Веддер,
+                лидер Pearl Jam.
+              </blockquote>
+              <p class="article__paragraph">
+                Уверен, если просмотреть это кино раз сто (я, пока статью писал,
+                раз 15 посмотрел) таких, так сказать, пасхалок с обложками,
+                можно будет еще найти. Я же расскажу еще о двух.
+              </p>
+              <p class="article__paragraph">
+                Майка с участниками Stillwater копирует обложку альбома
+                «Burnin&#8217; Sky» группы Bad Company. Интересно, что у
+                Стиллуотер на майке перед остальными участниками должен был
+                стоять Джефф Биби, которого, как вы помните, актер Джейсон Ли
+                списал с Пола Роджерса. А у Bad Company на обложке впереди стоит
+                именно Пол.
+              </p>
+              <p class="article__paragraph">
+                Отражение на лобовом стекле автомобиля в эпизоде, когда Уильям
+                едет с Пенни Лейн в отель на вторую встречу со Stillwater
+                &#8212; ничто иное, как обложка альбома «The Dark Side of the
+                Moon» легендарных <span class="bld">Pink Floyd</span>.
+              </p>
+              <p class="article__paragraph">
+                И еще пару слов про номер Rolling Stone, где вышла статья о
+                группе. Её название обыгрывает всё ту же поговорку про чертей и
+                тихий омут: «Stillwater runs deep». Заголовки же других статей
+                полностью или частично копируют настоящие. Например, в обоих
+                номерах есть «Do-It-Yourself Holografy». А заголовок «Is Freedom
+                of the Press Endangered?» взят из 133-го номера (первый, в
+                котором напечатали Кроу). Правда там он слегка другой: «Is
+                Freedom of the Press in Danger?» Но перевод один &#8212;
+                «Свобода прессы под угрозой?»
+              </p>
+              <p class="article__paragraph">
+                Порядковый номер этого выпуска &#8212; 142. Дата выхода не
+                указана. Хотя в настоящем 142-ом номере, мы ее увидим: 30
+                августа 1973 года. На обложке запечатлен музыкант Дэн Хикс,
+                лежащий на&#8230; лежащий на&#8230; хм, пусть будет на женских
+                коленях. Этот выпуск примечателен тем, что в нём есть статья
+                Кроу про Ван Моррисона.
+              </p>
+              <p class="article__paragraph">
+                И ещё кое-что&#8230; Хотя нет, хватит. А то ишь, разошёлся :)
+              </p>
+              <p style="text-align: center">***</p>
+              <p class="article__paragraph">
+                В завершение скажу кратко, «Почти знаменит» — фильм не только
+                для поклонников рок-музыки. Он понравится всем любителям
+                хорошего кино.
+              </p>
+              <p class="article__paragraph">
+                P.S.: тем, кто прочитал статью от и до &#8212; как говорится,
+                респект и уважуха.
+              </p>
+            </div>
+          </article>
+          <aside class="sidebar"></aside>
         </div>
       </main>
       <footer class="footer">
