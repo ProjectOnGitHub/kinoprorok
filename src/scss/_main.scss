@@ -15,5 +15,10 @@
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr;
     }
+    &_single-page {
+      @media screen and (max-width: $tablet-large) {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 }

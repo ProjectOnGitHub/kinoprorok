@@ -4,5 +4,8 @@
   gap: 50px;
   &_single-page {
     padding-top: 75px;
+    @media screen and (max-width: $tablet-large) {
+      padding-top: 40px;
+    }
   }
 }
