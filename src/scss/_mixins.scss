@@ -20,6 +20,12 @@
   transition: 0.5s ease-in-out;
 }
 
+@mixin hoverLink() {
+  &:hover {
+    color: $color-link;
+  }
+}
+
 @mixin button() {
   justify-content: center;
   align-items: center;
@@ -32,6 +38,17 @@
   &:hover {
     transform: scale(1.05);
   }
-  &:active {
-  }
+}
+
+@mixin articleTextPadding() {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@mixin articleTitle() {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  line-height: 1.21;
 }

@@ -17,3 +17,6 @@
 @import './scss/sidebar';
 @import './scss/category';
 @import './scss/footer';
+@import './scss/breadcrumbs';
+@import './scss/article';
+@import './scss/blockquote';

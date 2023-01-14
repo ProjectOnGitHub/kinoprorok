@@ -1,0 +1,84 @@
+.article {
+  @include gridable(100%);
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: $color-white;
+  color: $color-bg;
+  font-size: 16px;
+  &__text {
+    @include gridable(100%);
+    gap: 10px;
+    line-height: 1.6;
+  }
+  &__title {
+    @include articleTextPadding();
+    font-size: 28px;
+    font-weight: 700;
+    @include articleTitle();
+    padding-bottom: 40px;
+  }
+  &__subtitle {
+    @include articleTextPadding();
+    @include articleTitle();
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__small-title {
+    @include articleTextPadding();
+    font-size: 20px;
+    font-weight: 500;
+    @include articleTitle();
+  }
+
+  &__figure {
+    @include gridable(100%);
+    margin: 0;
+    background-color: $color-bg-root;
+    justify-content: center;
+    position: relative;
+  }
+  &__image {
+    justify-self: center;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  &__figure-text {
+    @include articleTextPadding();
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+  }
+  &__paragraph {
+    @include articleTextPadding();
+    margin: 0;
+  }
+  &__list {
+    padding: 0 10px 0 40px;
+    margin: 0;
+  }
+  &__link {
+    font-weight: 400;
+    @include defaultLink();
+    color: $color-bg;
+    @include hoverLink();
+    display: inline-block;
+    &::after {
+      background-color: $color-link;
+      display: block;
+      content: '';
+      height: 1px;
+      width: 100%;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover::after,
+    &:focus::after {
+      width: 0%;
+      background-color: $color-white;
+    }
+  }
+}
