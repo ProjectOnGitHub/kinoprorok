@@ -62,22 +62,12 @@
   }
   &__link {
     font-weight: 400;
-    @include defaultLink();
+    text-decoration: underline;
     color: $color-bg;
-    @include hoverLink();
-    display: inline-block;
-    &::after {
-      background-color: $color-link;
-      display: block;
-      content: '';
-      height: 1px;
-      width: 100%;
-      transition: 0.5s ease-in-out;
-    }
-    &:hover::after,
-    &:focus::after {
-      width: 0%;
-      background-color: $color-white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: $color-link;
     }
   }
 }
