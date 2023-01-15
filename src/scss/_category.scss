@@ -121,22 +121,28 @@
     font-weight: 500;
     margin: 0;
   }
+
   &__button {
-    @include button();
-    color: $color-white;
-    background-color: rgba($color-bg, 0.5);
-    @include flexible(20px);
-    height: 50px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    position: fixed;
-    border-radius: 3px 0 0 3px;
-    &:hover {
-    }
-    &_active {
-      right: 300px;
-      background-color: rgba($color-bg, 1);
+    display: none;
+    @media screen and (max-width: $tablet-large) {
+      @include button();
+      color: $color-white;
+      background-color: rgba($color-bg, 0.5);
+      @include flexible(20px);
+      height: 50px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: fixed;
+      border-radius: 3px 0 0 3px;
+      z-index: 5;
+      &_active {
+        right: 300px;
+        background-color: rgba($color-bg, 1);
+        & .category__button-icon {
+          transform: rotateY(180deg);
+        }
+      }
     }
   }
 }
