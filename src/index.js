@@ -10,6 +10,14 @@ const menu = document.querySelector('.header__menu');
 const menuButton = document.querySelector('.header__menu-button');
 const menuOverlay = document.querySelector('.overlay');
 const cross = menuButton.querySelector('.cross');
+const contents = document.querySelector('.category_contents');
+const contentsButton = document.querySelector('.category__button');
+console.log(contentsButton);
+
+const toggleContentsButton = () => {
+  contents.classList.toggle('category_opened');
+  contentsButton.classList.toggle('category__button_active');
+};
 
 const toggleMenuButton = () => {
   menu.classList.toggle('header__menu_opened');
@@ -28,6 +36,15 @@ const closeMenu = (e) => {
   }
 };
 
+const closeContents = (e) => {
+  if (e.target.classList.contains('contents__link')) {
+    contents.classList.remove('category_opened');
+    contentsButton.classList.remove('category__button_active');
+  }
+};
+
 menuButton.addEventListener('click', toggleMenuButton);
 menu.addEventListener('click', closeMenu);
 menuOverlay.addEventListener('click', closeMenu);
+contentsButton.addEventListener('click', toggleContentsButton);
+contents.addEventListener('click', closeContents);

@@ -1,6 +1,38 @@
 .category {
   @include gridable(100%);
   gap: 20px;
+  max-width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  @media screen and (max-width: $tablet-large) {
+    max-width: 100%;
+  }
+  &_contents {
+    position: sticky;
+    top: 0;
+    max-width: 300px;
+    @media screen and (max-width: $tablet-large) {
+      opacity: 0;
+      transition: 0.5s;
+      visibility: hidden;
+      height: auto;
+      align-content: center;
+      position: fixed;
+      right: -300px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-bg;
+      padding: 30px 15px;
+      border-radius: 3px;
+      color: $color-white;
+      z-index: 5;
+    }
+  }
+  &_opened {
+    opacity: 1;
+    right: 0;
+    visibility: visible;
+  }
   &__posts {
     @include unmarkedList(0, 0);
     @include gridable(100%);
@@ -88,5 +120,23 @@
     font-size: 28px;
     font-weight: 500;
     margin: 0;
+  }
+  &__button {
+    @include button();
+    color: $color-white;
+    background-color: rgba($color-bg, 0.5);
+    @include flexible(20px);
+    height: 50px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    border-radius: 3px 0 0 3px;
+    &:hover {
+    }
+    &_active {
+      right: 300px;
+      background-color: rgba($color-bg, 1);
+    }
   }
 }

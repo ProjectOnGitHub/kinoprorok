@@ -1,0 +1,16 @@
+.contents {
+  @include gridable(100%);
+  margin: 0;
+  box-sizing: border-box;
+  padding-inline-start: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  &__link {
+    color: $color-bg;
+    @include defaultLink();
+    @include hoverLink();
+    @media screen and (max-width: $tablet-large) {
+      color: $color-white;
+    }
+  }
+}
