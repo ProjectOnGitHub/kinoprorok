@@ -43,6 +43,9 @@
     height: auto;
     max-height: 500px;
     object-fit: contain;
+    &:hover {
+      cursor: zoom-in;
+    }
   }
   &__figure-text {
     @include articleTextPadding();

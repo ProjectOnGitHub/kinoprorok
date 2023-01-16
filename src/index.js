@@ -12,7 +12,31 @@ const menuOverlay = document.querySelector('.overlay');
 const cross = menuButton.querySelector('.cross');
 const contents = document.querySelector('.category_contents');
 const contentsButton = document.querySelector('.category__button');
-console.log(contentsButton);
+const popup = document.querySelector('.popup');
+const article = document.querySelector('.article');
+const popupImage = document.querySelector('.popup__image');
+const popupText = document.querySelector('.popup__figure-text');
+
+function openPopup(e) {
+  if (e.target.classList.contains('article__image')) {
+    popup.classList.add('popup_active');
+    document.body.classList.add('scroll-lock');
+    popupImage.src = e.target.src;
+    popupText.textContent = e.target.nextElementSibling.textContent;
+  }
+}
+
+function closePopup(e) {
+  if (e.target.classList.contains('popup__image')
+    || e.target.classList.contains('popup__overlay')
+    || e.target.classList.contains('popup__figure-text')) {
+    popup.classList.remove('popup_active');
+    document.body.classList.remove('scroll-lock');
+  }
+}
+
+article.addEventListener('click', openPopup);
+popup.addEventListener('click', closePopup);
 
 const toggleContentsButton = () => {
   contents.classList.toggle('category_opened');

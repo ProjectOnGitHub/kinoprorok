@@ -9,7 +9,7 @@
   }
   &_contents {
     position: sticky;
-    top: 0;
+    top: 20px;
     max-width: 300px;
     @media screen and (max-width: $tablet-large) {
       opacity: 0;
