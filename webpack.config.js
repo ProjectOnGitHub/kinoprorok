@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
-const htmlPageNames = ['post'];
+const htmlPageNames = ['post', 'category'];
 const multipleHtmlPlugins = htmlPageNames.map((name) => new HtmlWebpackPlugin({
   template: `./src/${name}.html`, // relative path to the HTML files
   filename: `${name}.html`, // output HTML files

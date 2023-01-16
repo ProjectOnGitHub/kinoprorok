@@ -2,8 +2,8 @@
   @include gridable(100%);
   align-content: start;
   gap: 50px;
-  &_single-page {
-    padding-top: 75px;
+  &_inner-page {
+    padding-top: 55px;
     position: relative;
     @media screen and (max-width: $tablet-large) {
       padding-top: 40px;

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кино про рок</title>
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="logo">
+            <span class="logo__title">Кино про рок</span>
+            <span class="logo__subtitle">блог о рок-музыке в кино</span>
+          </a>
+          <form class="search-form">
+            <input
+              type="search"
+              class="search-form__input"
+              placeholder="Поиск"
+            />
+            <button class="search-form__button">
+              <svg class="search-form__icon">
+                <use xlink:href="#search-icon"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="header__navigation">
+            <button
+              aria-label="mobile menu"
+              type="button"
+              class="header__menu-button"
+            >
+              <span class="cross"><span class="cross__line"></span></span>
+            </button>
+            <div class="overlay"></div>
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Кино про рок</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Рок в кино</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Саундтрек</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Биография</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Новости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__primary-content main__primary-content_inner-page">
+          <section class="posts">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="category.html" class="breadcrumbs__link"
+                  >Кино про рок</a
+                >
+              </li>
+              <li class="breadcrumbs__item">Почти знаменит</li>
+            </ul>
+            <h1 class="posts__title">Статьи рубрики Кино про рок</h1>
+            <ul class="posts__list">
+              <li class="posts__list-item">
+                <article class="post">
+                  <a href="post.html" class="post__link post__link_image">
+                    <img
+                      src="<%=require('../src/images/slider-1.jpg')%>"
+                      alt=""
+                      class="post__image"
+                    />
+                  </a>
+                  <div class="post__container">
+                    <h2 class="post__title">
+                      <a href="post.html" class="post__link post__link_title">
+                        Фильм «Почти знаменит»: в тихом омуте черти водятся</a
+                      >
+                    </h2>
+                    <p class="post__paragraph">
+                      Краткое описание символом на 80 максимум. Можно еще
+                      столько же добавить.
+                    </p>
+                    <div class="post__info">
+                      <span class="date">21.02.2022</span>
+                      <a href="category.html" class="post__category"
+                        >Кино про рок</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="posts__list-item">
+                <article class="post">
+                  <a href="post.html" class="post__link post__link_image">
+                    <img
+                      src="<%=require('../src/images/slider-2.jpg')%>"
+                      alt=""
+                      class="post__image"
+                    />
+                  </a>
+                  <div class="post__container">
+                    <h2 class="post__title">
+                      <a href="post.html" class="post__link post__link_title"
+                        >«Школа рока»</a
+                      >
+                    </h2>
+                    <p class="post__paragraph">
+                      Краткое описание символом на 80 максимум.
+                    </p>
+                    <div class="post__info">
+                      <span class="date">21.02.2022</span>
+                      <a href="category.html" class="post__category"
+                        >Кино про рок</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="posts__list-item">
+                <article class="post">
+                  <a href="post.html" class="post__link post__link_image">
+                    <img
+                      src="<%=require('../src/images/slider-3.jpg')%>"
+                      alt=""
+                      class="post__image"
+                    />
+                  </a>
+                  <div class="post__container">
+                    <h2 class="post__title">
+                      <a href="post.html" class="post__link post__link_title">
+                        «Рок-волна»: заплыв по морю рока</a
+                      >
+                    </h2>
+                    <p class="post__paragraph">
+                      Краткое описание символом на 80 максимум. Можно еще
+                      столько же добавить. А можно и еще разок столько же
+                      добавить.
+                    </p>
+                    <div class="post__info">
+                      <span class="date">21.02.2022</span>
+                      <a href="category.html" class="post__category"
+                        >Кино про рок</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="posts__list-item">
+                <article class="post">
+                  <a href="post.html" class="post__link post__link_image">
+                    <img
+                      src="<%=require('../src/images/slider-4.jpg')%>"
+                      alt=""
+                      class="post__image"
+                    />
+                  </a>
+                  <div class="post__container">
+                    <h2 class="post__title">
+                      <a href="post.html" class="post__link post__link_title">
+                        Фильм «Почти знаменит»: в тихом омуте черти водятся
+                      </a>
+                    </h2>
+                    <p class="post__paragraph">
+                      Краткое описание символом на 80 максимум. Можно еще
+                      столько же добавить.
+                    </p>
+                    <div class="post__info">
+                      <span class="date">21.02.2022</span>
+                      <a href="category.html" class="post__category"
+                        >Кино про рок</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="posts__list-item">
+                <article class="post">
+                  <a href="post.html" class="post__link post__link_image">
+                    <img
+                      src="<%=require('../src/images/slider-3.jpg')%>"
+                      alt=""
+                      class="post__image"
+                    />
+                  </a>
+                  <div class="post__container">
+                    <h2 class="post__title">
+                      <a href="post.html" class="post__link post__link_title">
+                        Фильм «Почти знаменит»: в тихом омуте черти водятся
+                      </a>
+                    </h2>
+                    <p class="post__paragraph">
+                      Краткое описание символом на 80 максимум. Можно еще
+                      столько же добавить.
+                    </p>
+                    <div class="post__info">
+                      <span class="date">21.02.2022</span>
+                      <a href="category.html" class="post__category"
+                        >Кино про рок</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="posts__more-button">Показать ещё</button>
+          </section>
+          <aside class="sidebar sidebar_inner-page">
+            <section class="category">
+              <h3 class="category__name">Последние статьи</h3>
+              <ul class="category__posts">
+                <li class="category__posts-item">
+                  <span class="date">21.02.2022</span>
+                  <h3 class="category__post-title">
+                    <a
+                      href="post.html"
+                      class="category__post-link category__post-link_title"
+                      >Showtime экранизирует мемуары Патти Смит
+                    </a>
+                  </h3>
+                </li>
+                <li class="category__posts-item">
+                  <span class="date">21.02.2022</span>
+                  <h3 class="category__post-title">
+                    <a
+                      href="post.html"
+                      class="category__post-link category__post-link_title"
+                      >Showtime экранизирует мемуары Патти Смит
+                    </a>
+                  </h3>
+                </li>
+                <li class="category__posts-item">
+                  <span class="date">21.02.2022</span>
+                  <h3 class="category__post-title">
+                    <a
+                      href="post.html"
+                      class="category__post-link category__post-link_title"
+                      >Showtime экранизирует мемуары Патти Смит
+                    </a>
+                  </h3>
+                </li>
+                <li class="category__posts-item">
+                  <span class="date">21.02.2022</span>
+                  <h3 class="category__post-title">
+                    <a
+                      href="post.html"
+                      class="category__post-link category__post-link_title"
+                      >Showtime экранизирует мемуары Патти Смит
+                    </a>
+                  </h3>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a href="" class="footer__link">О блоге</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="" class="footer__link">Все статьи</a>
+            </li>
+          </ul>
+          <p class="footer__copyright">© 2023 AV</p>
+        </div>
+      </footer>
+      <div class="popup">
+        <div class="popup__overlay"></div>
+
+        <figure class="popup__figure">
+          <img src="" alt="" class="popup__image" />
+          <figcaption class="popup__figure-text"></figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

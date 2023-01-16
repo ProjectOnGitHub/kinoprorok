@@ -15,7 +15,7 @@
     @media screen and (max-width: $tablet) {
       grid-template-columns: 1fr;
     }
-    &_single-page {
+    &_inner-page {
       @media screen and (max-width: $tablet-large) {
         grid-template-columns: 1fr;
       }
