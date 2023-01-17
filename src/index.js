@@ -35,9 +35,6 @@ function closePopup(e) {
   }
 }
 
-article.addEventListener('click', openPopup);
-popup.addEventListener('click', closePopup);
-
 const toggleContentsButton = () => {
   contents.classList.toggle('category_opened');
   contentsButton.classList.toggle('category__button_active');
@@ -72,3 +69,5 @@ menu.addEventListener('click', closeMenu);
 menuOverlay.addEventListener('click', closeMenu);
 contentsButton.addEventListener('click', toggleContentsButton);
 contents.addEventListener('click', closeContents);
+article.addEventListener('click', openPopup);
+popup.addEventListener('click', closePopup);
